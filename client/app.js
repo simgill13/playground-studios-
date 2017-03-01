@@ -12,22 +12,16 @@ function getData() {
 
 function renderData(state) {
    state.data.forEach(function(post) {
-   	var blog = `<div id=${post._id} class="article-div">
-                    	
-                      <h2> ${post.name}</h2>
-                      
-                      	<input class='hidden' type="text" id=${post._id} placeholder="Edit Name">
-                      
-                      <p> Email: ${post.email}</p>
-                      <p> Subject: ${post.subject}</p>
-                      
-                       <p> Message: ${post.message} </p>
-                       <button class="delete"> delete </button>
-                       <button id=${post._id} class="edit"> Edit post </button>
-
-                    </div>`
-
-     $('.oldPosts').append(blog);
+   		var blog = `<div id=${post._id} class="article-div">	
+	                    <h2> ${post.name}</h2>
+	                    <input class='hidden' type="text" id=${post._id} placeholder="Edit Name">
+	                    <p> Email: ${post.email}</p>
+	                    <p> Subject: ${post.subject}</p>
+	                    <p> Message: ${post.message} </p>
+	                    <button class="delete"> delete </button>
+	                    <button id=${post._id} class="edit"> Edit post </button>
+               		</div>`
+    	$('.oldPosts').append(blog);
    })
 }
 
