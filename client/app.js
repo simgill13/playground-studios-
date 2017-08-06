@@ -1,7 +1,8 @@
+var heroku ="https://tranquil-badlands-25971.herokuapp.com/"
 
 
 function getData() {
-	$.getJSON("http://localhost:8080/menu4", function(data) {	
+	$.getJSON("https://tranquil-badlands-25971.herokuapp.com/menu4", function(data) {	
 		$( ".middleColumn" ).html(data);
 		$( ".forth" ).css( "background-color","white" );
 	})
@@ -12,7 +13,7 @@ function selection(state){
 	$(".navButtons").click(function() {
    		var myClass = $(this).attr("class"); 		
    		var menuNumber = myClass.toString().slice(0,5)
-   		$.getJSON(`http://localhost:8080/${menuNumber}`, function(data) {	
+   		$.getJSON(`https://tranquil-badlands-25971.herokuapp.com/${menuNumber}`, function(data) {	
 			$( ".middleColumn" ).html(data);
 		})
 	});
