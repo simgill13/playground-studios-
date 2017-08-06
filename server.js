@@ -6,9 +6,9 @@ const app = express();
 app.use(bodyParser.json());
 const path = require('path');
 
-const {PORT, DATABASE_URL} = require('./secret');
+const { DATABASE_URL} = require('./secret');
 const {menu1, menu2, menu3, menu4, menu5} = require('./story');
-
+const PORT = process.env.PORT || 8080;
 
 // on start loading the client  folder
 app.use('/',express.static(path.join(__dirname, 'client')));
