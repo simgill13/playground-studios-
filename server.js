@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 const path = require('path');
 
-const { DATABASE_URL} = require('./secret');
+
 const {menu1, menu2, menu3, menu4, menu5} = require('./story');
 const PORT = process.env.PORT || 8080;
 
@@ -38,7 +38,7 @@ app.get('/menu5', (req, res) => {
 
 
 let server;
-function runServer(databaseUrl=DATABASE_URL, port=PORT) {
+function runServer( port=PORT) {
 
   return new Promise((resolve, reject) => {
     
