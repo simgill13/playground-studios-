@@ -50,15 +50,150 @@ html body {
 
 }*/
 
-
+#videoDiv{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
 
 .video-spot{
-  position:relative;  
+  
+  border: 1px solid blue;
+  position:absolute;  
 /* background-image: url("sun.jpg");*/
  width: 100%;
- height: 500px;
+ height: 100%;
  background-repeat: no-repeat;
  background-size: cover;
  background-position: center;
-  
+}
+
+
+
+.navheader{
+  width: 100%;
+  height: 80px;
+/*  border: solid;
+*/  display: inline-block;
+  font-size: 0;
+  overflow: hidden;
+  z-index: 1000;
+   background: linear-gradient(to top, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.3));
+   position: fixed;
+   top: 0;
+
+}
+
+
+.nvleftside{
+  width: 50%;
+  height: 80px;
+  display: inline-block;
+/*  border: solid blue;
+*/  vertical-align: top;
+
+}
+
+
+.slow-spin {
+  -webkit-animation: fa-spin 4s 1 ease-in-out;
+  animation: fa-spin 4s 1 ease-in-out;
+}
+.nvrightside{
+  width: 50%;
+  height: 80px;
+  display: inline-block;
+/*  border: solid blue;
+*/  vertical-align: top;
+text-align: right;
+
+}
+
+.navicontext{
+  border: solid red;
+  font-size: 15px;
+  display: inline-block;
+}
+
+
+.navlist{/*
+  font-size: 12px;*/
+  display: inline-block;
+  text-align: center;
+}
+
+.navicon{
+      margin-left: 15px;
+    font-size: 45px;
+    display: inline-block;
+    color: white;
+    /* font-weight: 100; */
+    margin-top: 10px;
+ 
+}
+
+.navportfolio,.navabout,.about{
+  display: inline-block;
+  font-size: 18px;
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+    font-family: 'Montserrat UltraLight';
+  margin-right: 40px;
+
+}
+
+
+
+.navicons{
+  font-size: 18px;
+  display: inline-block;
+}
+.myname{
+  font-size: 17px;
+    display: inline-block;
+}
+
+
+
+
+
+
+.breficaseicon:hover { 
+  cursor: pointer;
+   /* background-color: white;
+    color: black;
+      border-width: 0px;
+      border-radius: 5px;*/
+
+}
+
+.simtest{
+
+cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+
+}
+
+.simtest:after{
+  content: 'Portfolio';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+
+.breficaseicon:hover .simtest {
+  padding-right: 82px;
+}
+
+
+.breficaseicon:hover .simtest:after {
+  opacity: 1;
+  right: 0;
+  /*font-size: 4px;*/
 }
