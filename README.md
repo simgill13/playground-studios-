@@ -7,7 +7,7 @@ To Start --
 4. In terminal RUN command -- node server.js 
 
 Application is Deployed on Heroku for easy viewing -- 
-1. https://tranquil-badlands-25971.herokuapp.com/
+
  
 
 Project Timeline--
